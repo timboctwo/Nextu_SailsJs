@@ -1,0 +1,12 @@
+<div class="row mb-3">
+  <div class="col-md-12">
+    <div class="page-header py-2">
+      <h1 class="text-info">
+        <i class="fas fa-camera-retro"></i> Fotos-para-ti!
+      </h1>
+    </div>
+    <!-- Added validation to populate the admin menu, or the user menu  -->
+    <% if (session && session.admin) { %> <%- partial('menu_admin') %> <% }else{
+    %> <%-partial('menu') %> <% } %>
+  </div>
+</div>
